@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="tr" data-lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vaha Asistanı</title>
+  <meta name="title-tr" content="Vaha Asistanı - Travian Legends için vaha analizi">
+  <meta name="title-en" content="Vaha Asistanı - Oasis analysis for Travian Legends">
+  <meta name="description" content="Travian Legends için vaha analizi: hayvanlar, ödül, yağma için asker önerisi ve hareket takibi. Oasis analysis for Travian Legends.">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="lang.js"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="img/icon.png" alt="">Vaha Asistanı</a>
+      <nav class="links">
+        <a class="hide-sm" href="#ozellikler"><span lang="tr">Özellikler</span><span lang="en">Features</span></a>
+        <a class="hide-sm" href="#fiyatlar"><span lang="tr">Fiyatlar</span><span lang="en">Pricing</span></a>
+        <a class="hide-sm" href="#sss"><span lang="tr">SSS</span><span lang="en">FAQ</span></a>
+        <span class="lang-switch"><button type="button" data-set="tr">TR</button><button type="button" data-set="en">EN</button></span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="hero">
+        <h1 lang="tr">Vahaları tek listede gör, yağmayı hesapla.</h1>
+        <h1 lang="en">See every oasis in one list and plan your raids.</h1>
+        <p class="lead" lang="tr">Vaha Asistanı, Travian Legends için bir Chrome uzantısıdır. Köyünün çevresindeki vahaları hayvanları, ödülleri ve bonuslarıyla yakından uzağa sıralar, her vaha için kaç askerle yağmaya gitmen gerektiğini hesaplar.</p>
+        <p class="lead" lang="en">Vaha Asistanı is a Chrome extension for Travian Legends. It lists the oases around your village from nearest to farthest with their animals, bounty and bonus, and calculates how many troops you need to raid each one.</p>
+        <div class="actions">
+          <a class="btn" href="#fiyatlar"><span lang="tr">Planları gör</span><span lang="en">See plans</span></a>
+          <a class="btn secondary" href="#" aria-disabled="true" data-store-link><span lang="tr">Chrome Web Store (yakında)</span><span lang="en">Chrome Web Store (coming soon)</span></a>
+        </div>
+      </div>
+
+      <div class="shot">
+        <img lang="tr" src="img/panel-tr.png" width="1280" height="800" alt="Vaha Asistanı paneli: vaha listesi, hayvanlar, asker önerileri ve yağma durumu">
+        <img lang="en" src="img/panel-en.png" width="1280" height="800" alt="Vaha Asistanı panel: oasis list, animals, troop suggestions and raid status">
+      </div>
+
+      <section id="ozellikler">
+        <h2 lang="tr">Özellikler</h2>
+        <h2 lang="en">Features</h2>
+        <div class="features">
+          <div class="feature">
+            <h3 lang="tr">Vaha tarama</h3><h3 lang="en">Oasis scan</h3>
+            <p lang="tr">Seçtiğin yarıçaptaki vahaları tarar. Hayvanları, piyade ve süvari savunmasını, bonusu ve son rapor zamanını tek tabloda gösterir.</p>
+            <p lang="en">Scans oases within the radius you choose. Shows animals, infantry and cavalry defense, bonus and the time of the last report in one table.</p>
+          </div>
+          <div class="feature">
+            <h3 lang="tr">Asker önerisi</h3><h3 lang="en">Troop suggestions</h3>
+            <p lang="tr">Yağma formülüne göre, kayıp sınırına ve kazanç/kayıp oranına uyan asker sayısını önerir. Roma, Cermen, Galya, Mısır ve Hun desteklenir.</p>
+            <p lang="en">Suggests the troop amount that fits your loss limit and gain/loss ratio, based on the raid formula. Supports Romans, Teutons, Gauls, Egyptians and Huns.</p>
+          </div>
+          <div class="feature">
+            <h3 lang="tr">Ödül hesabı</h3><h3 lang="en">Bounty calculation</h3>
+            <p lang="tr">Hayvanlar öldüğünde kazanacağın hammaddeyi hesaplar ve kayıplarının maliyetiyle karşılaştırır.</p>
+            <p lang="en">Calculates the resources you earn when the animals are killed and compares it with the cost of your losses.</p>
+          </div>
+          <div class="feature">
+            <h3 lang="tr">Demirci ve bira fabrikası</h3><h3 lang="en">Smithy and brewery</h3>
+            <p lang="tr">Aktif köyün demirci seviyelerini ve Cermenlerde bira fabrikası bonusunu oyundan okuyup hesaba katar.</p>
+            <p lang="en">Reads the smithy levels of the active village and, for Teutons, the brewery bonus from the game and includes them in the calculation.</p>
+          </div>
+          <div class="feature">
+            <h3 lang="tr">Hareket takibi</h3><h3 lang="en">Movement tracking</h3>
+            <p lang="tr">Giden ve dönen yağmaları vahaların yanında gösterir. Aynı vahaya yanlışlıkla ikinci kez asker göndermezsin.</p>
+            <p lang="en">Shows outgoing and returning raids next to each oasis, so you do not send troops to the same oasis twice by mistake.</p>
+          </div>
+          <div class="feature">
+            <h3 lang="tr">Yağma listesine ekleme</h3><h3 lang="en">Add to farm list</h3>
+            <p lang="tr">Önerilen asker sayısına tıklayınca vaha, seçtiğin yağma listesine o sayıyla eklenir. Her tıklama tek bir işlem yapar.</p>
+            <p lang="en">Click a suggested troop amount to add the oasis to your selected farm list with that amount. Each click performs a single action.</p>
+          </div>
+        </div>
+        <div class="note">
+          <span lang="tr">Vaha Asistanı senin yerine saldırı göndermez, yağma listesi başlatmaz ve toplu işlem yapmaz. Oyundaki her işlem senin tıklamanla yapılır. Türkçe ve İngilizce arayüz, temsilci olarak birden fazla hesap kullananlar için hesap bazında ayrı veri.</span>
+          <span lang="en">Vaha Asistanı does not send attacks, start farm lists or perform bulk actions for you. Every action in the game is made by your own click. Turkish and English interface, with separate data per account for players who also play as a sitter.</span>
+        </div>
+      </section>
+
+      <section id="fiyatlar">
+        <h2 lang="tr">Fiyatlar</h2>
+        <h2 lang="en">Pricing</h2>
+        <div class="plans">
+          <div class="plan">
+            <h3 lang="tr">Aylık</h3><h3 lang="en">Monthly</h3>
+            <div class="price">$3 <small lang="tr">/ ay</small><small lang="en">/ month</small></div>
+            <p lang="tr">Her ay yenilenir. İstediğin zaman iptal edebilirsin.</p>
+            <p lang="en">Renews every month. Cancel anytime.</p>
+            <a class="btn" href="#" aria-disabled="true" data-plan="monthly"><span lang="tr">Satın al</span><span lang="en">Buy</span></a>
+          </div>
+          <div class="plan featured">
+            <h3 lang="tr">Yıllık</h3><h3 lang="en">Yearly</h3>
+            <div class="price">$10 <small lang="tr">/ yıl</small><small lang="en">/ year</small></div>
+            <p lang="tr">Her yıl yenilenir. Aylık plana göre çok daha uygun.</p>
+            <p lang="en">Renews every year. Much cheaper than the monthly plan.</p>
+            <a class="btn" href="#" aria-disabled="true" data-plan="yearly"><span lang="tr">Satın al</span><span lang="en">Buy</span></a>
+          </div>
+          <div class="plan">
+            <h3 lang="tr">Ömür boyu</h3><h3 lang="en">Lifetime</h3>
+            <div class="price">$20 <small lang="tr">tek ödeme</small><small lang="en">one-time</small></div>
+            <p lang="tr">Bir kez öde, süresiz kullan. Gelecek güncellemeler dahil.</p>
+            <p lang="en">Pay once, use without time limit. Future updates included.</p>
+            <a class="btn" href="#" aria-disabled="true" data-plan="lifetime"><span lang="tr">Satın al</span><span lang="en">Buy</span></a>
+          </div>
+        </div>
+        <p lang="tr">Her lisans 2 tarayıcıda kullanılabilir. Ödemeler, satıcı sıfatıyla vergi ve faturalandırmayı yürüten Lemon Squeezy üzerinden alınır. Fiyatlara ülkene göre KDV eklenebilir.</p>
+        <p lang="en">Each license can be used in 2 browsers. Payments are processed by Lemon Squeezy, which acts as the merchant of record and handles taxes and invoicing. VAT may be added depending on your country.</p>
+      </section>
+
+      <section id="nasil">
+        <h2 lang="tr">Nasıl çalışır</h2>
+        <h2 lang="en">How it works</h2>
+        <ol class="steps" lang="tr">
+          <li>Planını seç ve satın al. Lisans anahtarın e-postana gelir.</li>
+          <li>Vaha Asistanı'nı Chrome Web Store'dan yükle.</li>
+          <li>Oyunu aç, sağ alttaki <strong>Vahalar</strong> butonuna bas ve lisans anahtarını gir.</li>
+          <li><strong>Tara</strong> ile çevrendeki vahaları listele ve önerileri kullan.</li>
+        </ol>
+        <ol class="steps" lang="en">
+          <li>Choose your plan and buy it. Your license key is sent to your email.</li>
+          <li>Install Vaha Asistanı from the Chrome Web Store.</li>
+          <li>Open the game, press the <strong>Oases</strong> button at the bottom right and enter your license key.</li>
+          <li>Press <strong>Scan</strong> to list the oases around you and use the suggestions.</li>
+        </ol>
+      </section>
+
+      <section id="sss" class="faq">
+        <h2 lang="tr">Sıkça sorulan sorular</h2>
+        <h2 lang="en">Frequently asked questions</h2>
+        <details lang="tr"><summary>Hangi tarayıcılarda çalışır?</summary><p>Google Chrome ve Chrome uzantılarını destekleyen tarayıcılarda (örneğin Edge, Brave) çalışır.</p></details>
+        <details lang="en"><summary>Which browsers are supported?</summary><p>Google Chrome and browsers that support Chrome extensions (for example Edge and Brave).</p></details>
+        <details lang="tr"><summary>Lisansımı başka bir bilgisayara taşıyabilir miyim?</summary><p>Evet. Paneldeki Lisans butonundan lisansı mevcut tarayıcıdan kaldırıp yeni bilgisayarda aynı anahtarı girebilirsin. Bir anahtar aynı anda 2 tarayıcıda kullanılabilir.</p></details>
+        <details lang="en"><summary>Can I move my license to another computer?</summary><p>Yes. Use the License button in the panel to remove the license from the current browser, then enter the same key on the new computer. A key can be used in 2 browsers at the same time.</p></details>
+        <details lang="tr"><summary>Aboneliğimi nasıl iptal ederim?</summary><p>Satın alma e-postasındaki bağlantıdan ya da vahaasistani@gmail.com adresine yazarak iptal edebilirsin. Ödediğin dönemin sonuna kadar kullanmaya devam edersin.</p></details>
+        <details lang="en"><summary>How do I cancel my subscription?</summary><p>Use the link in your purchase email or write to vahaasistani@gmail.com. You can keep using it until the end of the period you paid for.</p></details>
+        <details lang="tr"><summary>Verilerim nerede saklanıyor?</summary><p>Oyun verileri ve ayarların sadece kendi tarayıcında saklanır. Lisansını doğrulamak için yalnızca lisans anahtarın Lemon Squeezy'ye gönderilir. Ayrıntılar için gizlilik politikasına bak.</p></details>
+        <details lang="en"><summary>Where is my data stored?</summary><p>Game data and your settings are stored only in your own browser. Only your license key is sent to Lemon Squeezy to verify your license. See the privacy policy for details.</p></details>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div>Vaha Asistanı · <a href="mailto:vahaasistani@gmail.com">vahaasistani@gmail.com</a></div>
+      <nav>
+        <a href="privacy.html"><span lang="tr">Gizlilik politikası</span><span lang="en">Privacy policy</span></a>
+        <a href="terms.html"><span lang="tr">Kullanım koşulları</span><span lang="en">Terms of service</span></a>
+        <a href="refund.html"><span lang="tr">İade politikası</span><span lang="en">Refund policy</span></a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
